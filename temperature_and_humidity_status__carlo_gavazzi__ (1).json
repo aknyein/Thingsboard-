@@ -1,0 +1,1646 @@
+{
+  "title": "Temperature and Humidity Status (Carlo Gavazzi )",
+  "image": "data:image/png;base64,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",
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "widgets": {
+      "f4568d05-ef96-6f1d-964b-76f9b6d7b756": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-1-1Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-1Temperature",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.08750050820379474
+                },
+                {
+                  "name": "Zone-A-1-2Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-2Temperature",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.5247956792754422
+                },
+                {
+                  "name": "Zone-A-1-3Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-3Temperature",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.09392780447617843
+                },
+                {
+                  "name": "Zone-A-1-4Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-4Temperature",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.008387876891670754
+                },
+                {
+                  "name": "Zone-A-1-5Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-5Temperature",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.3292347557847224
+                },
+                {
+                  "name": "Zone-A-1-6Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-6Temperature",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.13217025609774002
+                },
+                {
+                  "name": "Zone-A-1-7Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-7Temperature",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.9214754842555062
+                },
+                {
+                  "name": "Zone-A-1-8Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-8Temperature",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.48057838586001056
+                },
+                {
+                  "name": "Zone-A-1-9Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-9Temperature",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.3269780591770348
+                },
+                {
+                  "name": "Zone-A-1-10Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-10Temperature",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.0525711950733756
+                },
+                {
+                  "name": "Zone-A-1-11Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-11Temperature",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.5742829804176011
+                },
+                {
+                  "name": "Zone-A-1-12Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-12Temperature",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.7577877489663112
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 18,
+              "max": 28,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 1 Temperature",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "f4568d05-ef96-6f1d-964b-76f9b6d7b756",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "6a52b6e9-712b-e018-cd0a-a051824513db": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-2-1Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-1Temperature",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.3601835377265352
+                },
+                {
+                  "name": "Zone-A-2-2Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-2Temperature",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.056735848997424565
+                },
+                {
+                  "name": "Zone-A-2-3Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-3Temperature",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.4884872658866013
+                },
+                {
+                  "name": "Zone-A-2-4Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-4Temperature",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6729725449338961
+                },
+                {
+                  "name": "Zone-A-2-5Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-5Temperature",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.48848172103889587
+                },
+                {
+                  "name": "Zone-A-2-6Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-6Temperature",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.6539627863689694
+                },
+                {
+                  "name": "Zone-A-2-7Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-7Temperature",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.7172607695560091
+                },
+                {
+                  "name": "Zone-A-2-8Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-8Temperature",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.1354931827442698
+                },
+                {
+                  "name": "Zone-A-2-9Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-9Temperature",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.7256252974968223
+                },
+                {
+                  "name": "Zone-A-2-10Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-10Temperature",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.5250778333410693
+                },
+                {
+                  "name": "Zone-A-2-11Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-11Temperature",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.8642845018343075
+                },
+                {
+                  "name": "Zone-A-2-12Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-12Temperature",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.8723822256986531
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 18,
+              "max": 28,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 2 Temperature",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "6a52b6e9-712b-e018-cd0a-a051824513db",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "39a879c2-6dab-dc1d-e3aa-7a136be6aa6a": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-B-1-1Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-1Temperature",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7563178873903473
+                },
+                {
+                  "name": "Zone-B-1-2Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-2Temperature",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.9131881542559055
+                },
+                {
+                  "name": "Zone-B-1-3Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-3Temperature",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.13218199068650005
+                },
+                {
+                  "name": "Zone-B-1-4Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-4Temperature",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.07142661248775939
+                },
+                {
+                  "name": "Zone-B-1-5Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-5Temperature",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.2067977224633475
+                },
+                {
+                  "name": "Zone-B-1-6Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-6Temperature",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.5839988827816678
+                },
+                {
+                  "name": "Zone-B-1-7Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-7Temperature",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.7992691313501663
+                },
+                {
+                  "name": "Zone-B-1-8Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-8Temperature",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.9648439502856998
+                },
+                {
+                  "name": "Zone-B-1-9Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-9Temperature",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.02586606005900216
+                },
+                {
+                  "name": "Zone-B-1-10Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-10Temperature",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.6773056224859979
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 25,
+              "max": 35,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone B 1 Temperature",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "39a879c2-6dab-dc1d-e3aa-7a136be6aa6a",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "f9d8fafd-3cba-59d2-1ebb-adcd5e2cc033": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-B-2-1Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-1Temperature",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.5811186220850033
+                },
+                {
+                  "name": "Zone-B-2-2Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-2Temperature",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.6677214775809408
+                },
+                {
+                  "name": "Zone-B-2-3Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-3Temperature",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.44452945050162374
+                },
+                {
+                  "name": "Zone-B-2-4Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-4Temperature",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.736801928624826
+                },
+                {
+                  "name": "Zone-B-2-5Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-5Temperature",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.12994693782814326
+                },
+                {
+                  "name": "Zone-B-2-6Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-6Temperature",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.8202883359719715
+                },
+                {
+                  "name": "Zone-B-2-7Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-7Temperature",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.8723684772442897
+                },
+                {
+                  "name": "Zone-B-2-8Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-8Temperature",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.5604095451585775
+                },
+                {
+                  "name": "Zone-B-2-9Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-9Temperature",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.7923427158501561
+                },
+                {
+                  "name": "Zone-B-2-10Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-10Temperature",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.34279883763804153
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 25,
+              "max": 35,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone B 2 Temperature",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "f9d8fafd-3cba-59d2-1ebb-adcd5e2cc033",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "00247983-ea79-6377-e67e-d2845b32de99": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-1-1Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-1Humidity",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9776913639059546
+                },
+                {
+                  "name": "Zone-A-1-2Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-2Humidity",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.4496542432447419
+                },
+                {
+                  "name": "Zone-A-1-3Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-3Humidity",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.29628690219696896
+                },
+                {
+                  "name": "Zone-A-1-4Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-4Humidity",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.36894242778158826
+                },
+                {
+                  "name": "Zone-A-1-5Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-5Humidity",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.7509393494546186
+                },
+                {
+                  "name": "Zone-A-1-6Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-6Humidity",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.8583944169540627
+                },
+                {
+                  "name": "Zone-A-1-7Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-7Humidity",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.3655348150378923
+                },
+                {
+                  "name": "Zone-A-1-8Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-8Humidity",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.5511288695170653
+                },
+                {
+                  "name": "Zone-A-1-9Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-9Humidity",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.979015250758825
+                },
+                {
+                  "name": "Zone-A-1-10Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-10Humidity",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.4088875200151818
+                },
+                {
+                  "name": "Zone-A-1-11Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-11Humidity",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.8500339144811724
+                },
+                {
+                  "name": "Zone-A-1-12Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-12Humidity",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.23778552464650526
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 1 Humidity",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "00247983-ea79-6377-e67e-d2845b32de99",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "72a22d87-a695-37ce-bdd6-fe466022beb8": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-2-1Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-1Humidity",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.929342719777855
+                },
+                {
+                  "name": "Zone-A-2-2Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-2Humidity",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.9427789356805074
+                },
+                {
+                  "name": "Zone-A-2-3Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-3Humidity",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.9070398243576627
+                },
+                {
+                  "name": "Zone-A-2-4Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-4Humidity",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.12573548772396825
+                },
+                {
+                  "name": "Zone-A-2-5Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-5Humidity",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.6573534460253871
+                },
+                {
+                  "name": "Zone-A-2-6Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-6Humidity",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.5805900231237864
+                },
+                {
+                  "name": "Zone-A-2-7Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-7Humidity",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.13830508271022213
+                },
+                {
+                  "name": "Zone-A-2-8Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-8Humidity",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.023261749277214472
+                },
+                {
+                  "name": "Zone-A-2-9Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-9Humidity",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.9338452562294997
+                },
+                {
+                  "name": "Zone-A-2-10Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-10Humidity",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.9257538889627233
+                },
+                {
+                  "name": "Zone-A-2-11Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-11Humidity",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.20986434631614714
+                },
+                {
+                  "name": "Zone-A-2-12Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-12Humidity",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.36386841739573694
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 2 Humidity",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "72a22d87-a695-37ce-bdd6-fe466022beb8",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "b58511c6-0a12-1555-c414-214a169b82b8": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-B-1-1Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-1Humidity",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.3695960949278352
+                },
+                {
+                  "name": "Zone-B-1-2Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-2Humidity",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.04943912539779749
+                },
+                {
+                  "name": "Zone-B-1-3Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-3Humidity",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.2314566707658281
+                },
+                {
+                  "name": "Zone-B-1-4Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-4Humidity",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6932913691619305
+                },
+                {
+                  "name": "Zone-B-1-5Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-5Humidity",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.031248397085773094
+                },
+                {
+                  "name": "Zone-B-1-6Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-6Humidity",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.49205670293912895
+                },
+                {
+                  "name": "Zone-B-1-7Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-7Humidity",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.08035188103034785
+                },
+                {
+                  "name": "Zone-B-1-8Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-8Humidity",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.9164384026027859
+                },
+                {
+                  "name": "Zone-B-1-9Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-9Humidity",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.6649768744570557
+                },
+                {
+                  "name": "Zone-B-1-10Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-1-10Humidity",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.6187169397094465
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone B 1 Humidity",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "b58511c6-0a12-1555-c414-214a169b82b8",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "4008de3b-4ac1-e4eb-582c-aa9f7bcad1e9": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-B-2-1Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-1Humidity",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.48933648677619734
+                },
+                {
+                  "name": "Zone-B-2-2Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-2Humidity",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.6077873952135131
+                },
+                {
+                  "name": "Zone-B-2-3Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-3Humidity",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.8036958485522854
+                },
+                {
+                  "name": "Zone-B-2-4Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-4Humidity",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.44114138501477274
+                },
+                {
+                  "name": "Zone-B-2-5Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-5Humidity",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.3623710729109595
+                },
+                {
+                  "name": "Zone-B-2-6Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-6Humidity",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.9643151587655454
+                },
+                {
+                  "name": "Zone-B-2-7Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-7Humidity",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.6435010501394014
+                },
+                {
+                  "name": "Zone-B-2-8Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-8Humidity",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.35672700833578563
+                },
+                {
+                  "name": "Zone-B-2-9Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-9Humidity",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.3009693263486961
+                },
+                {
+                  "name": "Zone-B-2-10Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-B-2-10Humidity",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.43405395431914484
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone B 2 Humidity",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "4008de3b-4ac1-e4eb-582c-aa9f7bcad1e9",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Carlo Gavazzi Temperature and Humidity (ESP8266)",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "f4568d05-ef96-6f1d-964b-76f9b6d7b756": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 0,
+                "col": 0
+              },
+              "6a52b6e9-712b-e018-cd0a-a051824513db": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 6,
+                "col": 0
+              },
+              "39a879c2-6dab-dc1d-e3aa-7a136be6aa6a": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 12,
+                "col": 0
+              },
+              "f9d8fafd-3cba-59d2-1ebb-adcd5e2cc033": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 18,
+                "col": 0
+              },
+              "00247983-ea79-6377-e67e-d2845b32de99": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 0,
+                "col": 12
+              },
+              "72a22d87-a695-37ce-bdd6-fe466022beb8": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 6,
+                "col": 12
+              },
+              "b58511c6-0a12-1555-c414-214a169b82b8": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 12,
+                "col": 12
+              },
+              "4008de3b-4ac1-e4eb-582c-aa9f7bcad1e9": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 18,
+                "col": 12
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "backgroundImageUrl": null,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "8f7d4f21-ab13-52af-7cdf-2cc0cacf3845": {
+        "id": "8f7d4f21-ab13-52af-7cdf-2cc0cacf3845",
+        "alias": "Sealion",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "d6c51890-1a24-11ee-ab78-536eaffa7025"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "137246cc-b401-9b75-231f-3ad698f6c416": {
+        "id": "137246cc-b401-9b75-231f-3ad698f6c416",
+        "alias": "ESP8266",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "7ba66280-3cab-11ee-9079-75f587c23e37"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "350af373-f4f4-3063-d3b0-a5447cee6eb5": {
+        "id": "350af373-f4f4-3063-d3b0-a5447cee6eb5",
+        "alias": "SLDS",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "05b0fbd0-1a1e-11ee-a0ed-4fb87ffd85da"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "filters": {},
+    "timewindow": {
+      "hideInterval": false,
+      "hideLastInterval": false,
+      "hideQuickInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "timewindowMs": 604800000,
+        "quickInterval": "CURRENT_DAY",
+        "interval": 1000
+      },
+      "aggregation": {
+        "type": "NONE",
+        "limit": 2500
+      },
+      "timezone": null
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true,
+      "titleColor": "rgba(0,0,0,0.870588)",
+      "showDashboardLogo": false,
+      "dashboardLogoUrl": null,
+      "hideToolbar": false,
+      "showFilters": true,
+      "showUpdateDashboardImage": true,
+      "dashboardCss": ""
+    }
+  },
+  "externalId": null,
+  "name": "Temperature and Humidity Status (Carlo Gavazzi )"
+}

@@ -1,0 +1,998 @@
+{
+  "title": "Generators Status",
+  "image": "data:image/jpeg;base64,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NP7VrSIIFRzp4k1LzvVait0V0A0NpVGhoJN2pRDxjuLXNIPHHkgyPniVgqHtnl/lXuNt6Jif+jTdt7FZzSd47QAjguRtPRXa21HuqUqjKQm7caKziAM+w4keIxS5JwVJXrpqmpb2ktFUNcPhqMLHc4JkeSiVNV7SJuhr4zuu/H6JdA0qAlTLRoe0M71F48J9pUMgjMEcwR7qQJWWyiSeX1H5rDKmau2Spaawo0WOc9+DWtF4kiOQA3k4BBcvIXYatdHNttYD7oo0zk+rIJG9rMzwyB3r1vVPo/sdjDanV9ZXui895vXSQLwY09lonbE8V16rYNnHasdHVisZD7vXVfnqgOj7jIhvPE8V2IRFYqEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAWuYCIIkbjioNp0JZqnfs9J2M402575jNbBEBzNXUeyHudbTyHZqucBG4VL0KBatQWnuV3bcKlNrxwi7dI54rtUUWRN2eV2voyquMXbK4QO0XVGwYgnq2sgxvmTvC7bVXVaz2Cl1dBuLsalR2L3ujMnYMMhgt8iWICIikBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB/9k=",
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "1c0ca777-abc3-1811-17d4-252ac531839d": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G125_Current_A",
+                  "label": "G125_Current_A",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8406661912174429
+                },
+                {
+                  "name": "G125_Current_B",
+                  "label": "G125_Current_B",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.757295218896926
+                },
+                {
+                  "name": "G125_Current_C",
+                  "label": "G125_Current_C",
+                  "type": "timeseries",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.67473408315103
+                },
+                {
+                  "name": "G125_Voltage_AB",
+                  "type": "timeseries",
+                  "label": "G125_Voltage_AB",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.5302188577271902
+                },
+                {
+                  "name": "G125_Voltage_BC",
+                  "type": "timeseries",
+                  "label": "G125_Voltage_BC",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.1490611735997096
+                },
+                {
+                  "name": "G125_Voltage_CA",
+                  "type": "timeseries",
+                  "label": "G125_Voltage_CA",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.5913353222224726
+                },
+                {
+                  "name": "G125_Frequency",
+                  "type": "timeseries",
+                  "label": "G125_Frequency",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.2621679242368524
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "125KVA Ampere/Voltage/Frequency",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "enableDataExport": true
+        },
+        "id": "1c0ca777-abc3-1811-17d4-252ac531839d",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "1cb0441c-1252-5b62-9770-b4cf43937410": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G315_Current_A",
+                  "label": "G315_Current_A",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9576092394467213
+                },
+                {
+                  "name": "G315_Current_B",
+                  "label": "G315_Current_B",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.3142658051716005,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "G315_Current_C",
+                  "label": "G315_Current_C",
+                  "type": "timeseries",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.20527596113059476
+                },
+                {
+                  "name": "G315_Voltage_AB",
+                  "label": "G315_Voltage_AB",
+                  "type": "timeseries",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.7847955194563474
+                },
+                {
+                  "name": "G315_Voltage_BC",
+                  "label": "G315_Voltage_BC",
+                  "type": "timeseries",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.7490831864063623
+                },
+                {
+                  "name": "G315_Voltage_CA",
+                  "label": "G315_Voltage_CA",
+                  "type": "timeseries",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.30426536882636834
+                },
+                {
+                  "name": "G315_Frequency",
+                  "type": "timeseries",
+                  "label": "G315_Frequency",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.5569138667684412
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "315KVA Ampere/Voltage/Frequency",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "enableDataExport": true
+        },
+        "id": "1cb0441c-1252-5b62-9770-b4cf43937410",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "5d89e1f1-203d-1604-9730-b55eb6b0bf25": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G125_Active_PowerA",
+                  "label": "G125_Active_PowerA",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7633294985502572
+                },
+                {
+                  "name": "G125_Active_PowerB",
+                  "label": "G125_Active_PowerB",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.32770728616376044
+                },
+                {
+                  "name": "G125_Active_PowerC",
+                  "label": "G125_Active_PowerC",
+                  "type": "timeseries",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.24713274081533854
+                },
+                {
+                  "name": "G125_Total_Active_Power",
+                  "type": "timeseries",
+                  "label": "G125_Total_Active_Power",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.4213697230443538
+                },
+                {
+                  "name": "G125_Total_Reactive_Power",
+                  "type": "timeseries",
+                  "label": "G125_Total_Reactive_Power",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.3658446367719861
+                },
+                {
+                  "name": "G125_Total_Apparent_Power",
+                  "type": "timeseries",
+                  "label": "G125_Total_Apparent_Power",
+                  "color": "#673ab7",
+                  "settings": {},
+                  "_hash": 0.9647572104027247
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "125KVA Power",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true
+        },
+        "id": "5d89e1f1-203d-1604-9730-b55eb6b0bf25",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "49a1bc74-4db7-dbc5-d655-7026c76014d8": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G315_Active_PowerA",
+                  "label": "G315_Active_PowerA",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.47463365496238064
+                },
+                {
+                  "name": "G315_Active_PowerB",
+                  "label": "G315_Active_PowerB",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.6275097959999245
+                },
+                {
+                  "name": "G315_Active_PowerC",
+                  "label": "G315_Active_PowerC",
+                  "type": "timeseries",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.546393671433095
+                },
+                {
+                  "name": "G315_Total_Active_Power",
+                  "type": "timeseries",
+                  "label": "G315_Total_Active_Power",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.39914053382951553
+                },
+                {
+                  "name": "G315_Total_Reactive_Power",
+                  "type": "timeseries",
+                  "label": "G315_Total_Reactive_Power",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.061061076761290245
+                },
+                {
+                  "name": "G315_Total_Apparent_Power",
+                  "type": "timeseries",
+                  "label": "G315_Total_Apparent_Power",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.6668034910816603
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "315KVA Power",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true
+        },
+        "id": "49a1bc74-4db7-dbc5-d655-7026c76014d8",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "ce04c9d3-a8d0-6bdf-de1c-7b28288459c2": {
+        "type": "latest",
+        "sizeX": 15,
+        "sizeY": 6,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G125_Total_Energy_Comsumption",
+                  "label": "125 KVA",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7268326521468027,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "G315_Total_Energy_Comsumption",
+                  "type": "timeseries",
+                  "label": "315 KVA",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.7625977510718545,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1693293480311,
+                "endTimeMs": 1693379880311
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 2500
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Total Energy Consumption (kWh)",
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "showLegend": false,
+          "useDashboardTimewindow": true
+        },
+        "id": "ce04c9d3-a8d0-6bdf-de1c-7b28288459c2",
+        "typeFullFqn": "system.cards.attributes_card"
+      },
+      "ef4f3fee-e4b9-e40e-8469-3478da3bcf70": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G125_Voltage_A",
+                  "label": "125 KVA",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.18571243286557637,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "G315_Voltage_A",
+                  "type": "timeseries",
+                  "label": "315 KVA",
+                  "color": "#F43007",
+                  "settings": {},
+                  "_hash": 0.38248186216922586,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "tooltipValueFormatter": "if (value > 220 ) {\n    return 'On';\n} else if (value <= 0) {\n    return 'Off';\n} else {\n    return '';\n}",
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": "if (value > 220) {\n    return 'On';\n} else if (value <=0) {\n    return 'Off';\n} else {\n    return '';\n}"
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": false
+            }
+          },
+          "title": "Generators ON/OFF Status",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "actions": {},
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "enableDataExport": true,
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "id": "ef4f3fee-e4b9-e40e-8469-3478da3bcf70",
+        "typeFullFqn": "system.charts.state_chart"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Acrel IoT Meters",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "1c0ca777-abc3-1811-17d4-252ac531839d": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 8
+              },
+              "1cb0441c-1252-5b62-9770-b4cf43937410": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 5,
+                "col": 0
+              },
+              "5d89e1f1-203d-1604-9730-b55eb6b0bf25": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 16
+              },
+              "49a1bc74-4db7-dbc5-d655-7026c76014d8": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 5,
+                "col": 8
+              },
+              "ce04c9d3-a8d0-6bdf-de1c-7b28288459c2": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 5,
+                "col": 16
+              },
+              "ef4f3fee-e4b9-e40e-8469-3478da3bcf70": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "df5c2968-0563-13ed-53b3-d3a21a047bcb": {
+        "id": "df5c2968-0563-13ed-53b3-d3a21a047bcb",
+        "alias": "Acrel Meter (ESP32)",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "b9432060-4174-11ee-ab78-536eaffa7025"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "4a1f0b62-babb-e4f1-979d-08a2be46a0b9": {
+        "id": "4a1f0b62-babb-e4f1-979d-08a2be46a0b9",
+        "alias": "SLDS",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "05b0fbd0-1a1e-11ee-a0ed-4fb87ffd85da"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "d9b5cbe4-1d94-2ff8-382f-778e010934e7": {
+        "id": "d9b5cbe4-1d94-2ff8-382f-778e010934e7",
+        "alias": "Current Device",
+        "filter": {
+          "type": "stateEntity",
+          "resolveMultiple": false,
+          "stateEntityParamName": null,
+          "defaultStateEntity": null
+        }
+      },
+      "d373fd5e-eda3-97b5-a387-fb3089454389": {
+        "id": "d373fd5e-eda3-97b5-a387-fb3089454389",
+        "alias": "SLDS (ESP)",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "05b0fbd0-1a1e-11ee-a0ed-4fb87ffd85da"
+          ]
+        }
+      }
+    },
+    "filters": {},
+    "timewindow": {
+      "hideInterval": false,
+      "hideLastInterval": false,
+      "hideQuickInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "timewindowMs": 604800000,
+        "quickInterval": "CURRENT_DAY",
+        "interval": 1000
+      },
+      "aggregation": {
+        "type": "NONE",
+        "limit": 2500
+      },
+      "timezone": null
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "externalId": null,
+  "name": "Generators Status"
+}
