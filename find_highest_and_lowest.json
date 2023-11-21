@@ -1,0 +1,112 @@
+{
+  "ruleChain": {
+    "additionalInfo": {
+      "description": ""
+    },
+    "name": "Find Highest and Lowest",
+    "type": "CORE",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null,
+    "externalId": null
+  },
+  "metadata": {
+    "firstNodeIndex": 0,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 223,
+          "layoutY": 4
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode",
+        "name": "Message Type Switch",
+        "debugMode": false,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "version": 0
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 294,
+          "layoutY": 296
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "Find Smallest and Largest Temp Value",
+        "debugMode": false,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "TBEL",
+          "jsScript": "return {msg: msg, metadata: metadata, msgType: msgType};",
+          "tbelScript": "// Define an array of values\nvar valuesA1 = [msg['Zone-A-1-1Temperature'], msg['Zone-A-1-2Temperature'],msg['Zone-A-1-3Temperature'],msg['Zone-A-1-4Temperature'],msg['Zone-A-1-5Temperature'],msg['Zone-A-1-6Temperature'],msg['Zone-A-1-7Temperature'],msg['Zone-A-1-8Temperature'],msg['Zone-A-1-9Temperature'],msg['Zone-A-1-10Temperature'],msg['Zone-A-1-11Temperature'],msg['Zone-A-1-12Temperature']]; // Add as many values as needed\n\nvar valuesA2 = [msg['Zone-A-2-1Temperature'], msg['Zone-A-2-2Temperature'],msg['Zone-A-2-3Temperature'],msg['Zone-A-2-4Temperature'],msg['Zone-A-2-5Temperature'],msg['Zone-A-2-6Temperature'],msg['Zone-A-2-7Temperature'],msg['Zone-A-2-8Temperature'],msg['Zone-A-2-9Temperature'],msg['Zone-A-2-10Temperature'],msg['Zone-A-2-11Temperature'],msg['Zone-A-2-12Temperature']]; // Add as many values as needed\nvar valuesB1 = [msg['Zone-B-1-1Temperature'], msg['Zone-B-1-2Temperature'],msg['Zone-B-1-3Temperature'],msg['Zone-B-1-4Temperature'],msg['Zone-B-1-5Temperature'],msg['Zone-B-1-6Temperature'],msg['Zone-B-1-7Temperature'],msg['Zone-B-1-8Temperature'],msg['Zone-B-1-9Temperature'],msg['Zone-B-1-10Temperature']]; // Add as many values as needed\n\nvar valuesB2 = [msg['Zone-B-2-1Temperature'], msg['Zone-B-2-2Temperature'],msg['Zone-B-2-3Temperature'],msg['Zone-B-2-4Temperature'],msg['Zone-B-2-5Temperature'],msg['Zone-B-2-6Temperature'],msg['Zone-B-2-7Temperature'],msg['Zone-B-2-8Temperature'],msg['Zone-B-2-9Temperature'],msg['Zone-B-2-10Temperature']]; // Add as many values as needed\n\n// Initialize a variable to store the largest value, assuming the first value is the largest\nvar A1largestValue = valuesA1[0];\nvar A1smallestValue = valuesA1[0];\nvar A2largestValue = valuesA2[0];\nvar A2smallestValue = valuesA2[0];\nvar B1largestValue = valuesB1[0];\nvar B1smallestValue = valuesB1[0];\nvar B2largestValue = valuesB2[0];\nvar B2smallestValue = valuesB2[0];\n\n// Iterate through the values\nfor (var i = 1; i < valuesA1.length; i++) {\n    if (valuesA1[i] > A1largestValue) {\n        // Update the largestValue if a larger value is found\n        A1largestValue = valuesA1[i];\n    }\n}\n\nfor (var i = 1; i < valuesA1.length; i++) {\n    if (valuesA1[i] < A1smallestValue) {\n        // Update the smallestValue if a larger value is found\n        A1smallestValue = valuesA1[i];\n    }\n}\n\n// Iterate through the values\nfor (var i = 1; i < valuesA2.length; i++) {\n    if (valuesA2[i] > A2largestValue) {\n        // Update the largestValue if a larger value is found\n        A2largestValue = valuesA2[i];\n    }\n}\n\nfor (var i = 1; i < valuesA2.length; i++) {\n    if (valuesA2[i] < A2smallestValue) {\n        // Update the smallestValue if a larger value is found\n        A2smallestValue = valuesA2[i];\n    }\n}\n\nfor (var i = 1; i < valuesB1.length; i++) {\n    if (valuesB1[i] > B1largestValue) {\n        // Update the largestValue if a larger value is found\n        B1largestValue = valuesB1[i];\n    }\n}\n\nfor (var i = 1; i < valuesB1.length; i++) {\n    if (valuesB1[i] < B1smallestValue) {\n        // Update the smallestValue if a larger value is found\n        B1smallestValue = valuesB1[i];\n    }\n}\n\n// Iterate through the values\nfor (var i = 1; i < valuesB2.length; i++) {\n    if (valuesB2[i] > B2largestValue) {\n        // Update the largestValue if a larger value is found\n        B2largestValue = valuesB2[i];\n    }\n}\n\nfor (var i = 1; i < valuesB2.length; i++) {\n    if (valuesB2[i] < B2smallestValue) {\n        // Update the smallestValue if a larger value is found\n        B2smallestValue = valuesB2[i];\n    }\n}\n\nmsg['Zone-A-1-HighestTempValue'] = A1largestValue;\nmsg['Zone-A-1-LowestTempValue'] = A1smallestValue;\nmsg['Zone-A-2-HighestTempValue'] = A2largestValue;\nmsg['Zone-A-2-LowestTempValue'] = A2smallestValue;\nmsg['Zone-B-1-HighestTempValue'] = B1largestValue;\nmsg['Zone-B-1-LowestTempValue'] = B1smallestValue;\nmsg['Zone-B-2-HighestTempValue'] = B2largestValue;\nmsg['Zone-B-2-LowestTempValue'] = B2smallestValue;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 714,
+          "layoutY": 347
+        },
+        "type": "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode",
+        "name": "Save to TS",
+        "debugMode": false,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "defaultTTL": 0,
+          "skipLatestPersistence": false,
+          "useServerTs": false
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 293,
+          "layoutY": 355
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "Find Smallest and Largest Humid Value",
+        "debugMode": false,
+        "singletonMode": false,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "TBEL",
+          "jsScript": "return {msg: msg, metadata: metadata, msgType: msgType};",
+          "tbelScript": "// Define an array of values\r\nvar valuesA1 = [msg['Zone-A-1-1Humidity'], msg['Zone-A-1-2Humidity'],msg['Zone-A-1-3Humidity'],msg['Zone-A-1-4Humidity'],msg['Zone-A-1-5Humidity'],msg['Zone-A-1-6Humidity'],msg['Zone-A-1-7Humidity'],msg['Zone-A-1-8Humidity'],msg['Zone-A-1-9Humidity'],msg['Zone-A-1-10Humidity'],msg['Zone-A-1-11Humidity'],msg['Zone-A-1-12Humidity']]; // Add as many values as needed\r\n\r\nvar valuesA2 = [msg['Zone-A-2-1Humidity'], msg['Zone-A-2-2Humidity'],msg['Zone-A-2-3Humidity'],msg['Zone-A-2-4Humidity'],msg['Zone-A-2-5Humidity'],msg['Zone-A-2-6Humidity'],msg['Zone-A-2-7Humidity'],msg['Zone-A-2-8Humidity'],msg['Zone-A-2-9Humidity'],msg['Zone-A-2-10Humidity'],msg['Zone-A-2-11Humidity'],msg['Zone-A-2-12Humidity']]; // Add as many values as needed\r\nvar valuesB1 = [msg['Zone-B-1-1Humidity'], msg['Zone-B-1-2Humidity'],msg['Zone-B-1-3Humidity'],msg['Zone-B-1-4Humidity'],msg['Zone-B-1-5Humidity'],msg['Zone-B-1-6Humidity'],msg['Zone-B-1-7Humidity'],msg['Zone-B-1-8Humidity'],msg['Zone-B-1-9Humidity'],msg['Zone-B-1-10Humidity']]; // Add as many values as needed\r\n\r\nvar valuesB2 = [msg['Zone-B-2-1Humidity'], msg['Zone-B-2-2Humidity'],msg['Zone-B-2-3Humidity'],msg['Zone-B-2-4Humidity'],msg['Zone-B-2-5Humidity'],msg['Zone-B-2-6Humidity'],msg['Zone-B-2-7Humidity'],msg['Zone-B-2-8Humidity'],msg['Zone-B-2-9Humidity'],msg['Zone-B-2-10Humidity']]; // Add as many values as needed\r\n\r\n// Initialize a variable to store the largest value, assuming the first value is the largest\r\nvar A1largestValue = valuesA1[0];\r\nvar A1smallestValue = valuesA1[0];\r\nvar A2largestValue = valuesA2[0];\r\nvar A2smallestValue = valuesA2[0];\r\nvar B1largestValue = valuesB1[0];\r\nvar B1smallestValue = valuesB1[0];\r\nvar B2largestValue = valuesB2[0];\r\nvar B2smallestValue = valuesB2[0];\r\n\r\n// Iterate through the values\r\nfor (var i = 1; i < valuesA1.length; i++) {\r\n    if (valuesA1[i] > A1largestValue) {\r\n        // Update the largestValue if a larger value is found\r\n        A1largestValue = valuesA1[i];\r\n    }\r\n}\r\n\r\nfor (var i = 1; i < valuesA1.length; i++) {\r\n    if (valuesA1[i] < A1smallestValue) {\r\n        // Update the smallestValue if a larger value is found\r\n        A1smallestValue = valuesA1[i];\r\n    }\r\n}\r\n\r\n// Iterate through the values\r\nfor (var i = 1; i < valuesA2.length; i++) {\r\n    if (valuesA2[i] > A2largestValue) {\r\n        // Update the largestValue if a larger value is found\r\n        A2largestValue = valuesA2[i];\r\n    }\r\n}\r\n\r\nfor (var i = 1; i < valuesA2.length; i++) {\r\n    if (valuesA2[i] < A2smallestValue) {\r\n        // Update the smallestValue if a larger value is found\r\n        A2smallestValue = valuesA2[i];\r\n    }\r\n}\r\n\r\nfor (var i = 1; i < valuesB1.length; i++) {\r\n    if (valuesB1[i] > B1largestValue) {\r\n        // Update the largestValue if a larger value is found\r\n        B1largestValue = valuesB1[i];\r\n    }\r\n}\r\n\r\nfor (var i = 1; i < valuesB1.length; i++) {\r\n    if (valuesB1[i] < B1smallestValue) {\r\n        // Update the smallestValue if a larger value is found\r\n        B1smallestValue = valuesB1[i];\r\n    }\r\n}\r\n\r\n// Iterate through the values\r\nfor (var i = 1; i < valuesB2.length; i++) {\r\n    if (valuesB2[i] > B2largestValue) {\r\n        // Update the largestValue if a larger value is found\r\n        B2largestValue = valuesB2[i];\r\n    }\r\n}\r\n\r\nfor (var i = 1; i < valuesB2.length; i++) {\r\n    if (valuesB2[i] < B2smallestValue) {\r\n        // Update the smallestValue if a larger value is found\r\n        B2smallestValue = valuesB2[i];\r\n    }\r\n}\r\n\r\nmsg['Zone-A-1-HighestHumidValue'] = A1largestValue;\r\nmsg['Zone-A-1-LowestHumidValue'] = A1smallestValue;\r\nmsg['Zone-A-2-HighestHumidValue'] = A2largestValue;\r\nmsg['Zone-A-2-LowestHumidValue'] = A2smallestValue;\r\nmsg['Zone-B-1-HighestHumidValue'] = B1largestValue;\r\nmsg['Zone-B-1-LowestHumidValue'] = B1smallestValue;\r\nmsg['Zone-B-2-HighestHumidValue'] = B2largestValue;\r\nmsg['Zone-B-2-LowestHumidValue'] = B2smallestValue;\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "externalId": null
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 1,
+        "type": "Post telemetry"
+      },
+      {
+        "fromIndex": 0,
+        "toIndex": 3,
+        "type": "Post telemetry"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 2,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 2,
+        "type": "Success"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}

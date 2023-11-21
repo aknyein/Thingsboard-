@@ -1,0 +1,2221 @@
+{
+  "title": "SLDS Operation and Maintenance Dashboard",
+  "image": null,
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "19b2271e-dfdf-bf7c-0254-4d08407f65e7": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "312047b0-8964-1da5-17fc-03fd70271b42",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Grid C_R_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase R Current (A)",
+                  "color": "#F44336",
+                  "settings": {},
+                  "_hash": 0.7761880022143408,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid C_Y_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase Y Current (A)",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.8691117021589869,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid C_B_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase B Current (A)",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.3497329158129179,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid CURRENT_TOTAL",
+                  "type": "timeseries",
+                  "label": "Average Current (A)",
+                  "color": "#673AB7",
+                  "settings": {},
+                  "_hash": 0.47024511143886394,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid VLL_AVG",
+                  "type": "timeseries",
+                  "label": "Average Line to Line Voltage (V)",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.24861238643960504,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid WATTS_R_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase R Power (KW)",
+                  "color": "#F44336",
+                  "settings": {},
+                  "_hash": 0.8400973944865817,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid WATTS_Y_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase Y Power (KW)",
+                  "color": "#F5DD00",
+                  "settings": {},
+                  "_hash": 0.6891861216442057,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid WATTS_B_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase B Power (KW)",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.31968017512775093,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid WATT_TOTAL",
+                  "type": "timeseries",
+                  "label": "Total Power (KW)",
+                  "color": "#673AB7",
+                  "settings": {},
+                  "_hash": 0.39545655355783915,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid Frequency",
+                  "type": "timeseries",
+                  "label": "Frequency (Hz)",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.7359188918391908,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid PF_R_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase R Power Factor",
+                  "color": "#F44336",
+                  "settings": {},
+                  "_hash": 0.155914927933279,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid PF_Y_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase Y Power Factor",
+                  "color": "#F5DD00",
+                  "settings": {},
+                  "_hash": 0.761211950168635,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid PF_B_PHASE",
+                  "type": "timeseries",
+                  "label": "Phase B Power Factor",
+                  "color": "#048AD3",
+                  "settings": {},
+                  "_hash": 0.2600524042361807,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid PF_AVG",
+                  "type": "timeseries",
+                  "label": "Average Power Factor",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.32543888005048194,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Grid Wh_DELIVERED",
+                  "type": "timeseries",
+                  "label": "Power Delivered",
+                  "color": "#009688",
+                  "settings": {},
+                  "_hash": 0.008876304651447509,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "enableSelection": true,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            },
+            "customLegendEnabled": false
+          },
+          "title": "Grid Status",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "enableDataExport": true,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "displayTimewindow": true
+        },
+        "row": 0,
+        "col": 0,
+        "id": "19b2271e-dfdf-bf7c-0254-4d08407f65e7",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "1cb0441c-1252-5b62-9770-b4cf43937410": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "281632f0-04ae-b70a-5914-2136eea1ebab",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G315_Current_A",
+                  "label": "G315_Current_A",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9576092394467213
+                },
+                {
+                  "name": "G315_Current_B",
+                  "label": "G315_Current_B",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.3142658051716005,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "G315_Current_C",
+                  "label": "G315_Current_C",
+                  "type": "timeseries",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.20527596113059476
+                },
+                {
+                  "name": "G315_Voltage_AB",
+                  "label": "G315_Voltage_AB",
+                  "type": "timeseries",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.7847955194563474
+                },
+                {
+                  "name": "G315_Voltage_BC",
+                  "label": "G315_Voltage_BC",
+                  "type": "timeseries",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.7490831864063623
+                },
+                {
+                  "name": "G315_Voltage_CA",
+                  "label": "G315_Voltage_CA",
+                  "type": "timeseries",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.30426536882636834
+                },
+                {
+                  "name": "G315_Frequency",
+                  "type": "timeseries",
+                  "label": "G315_Frequency",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.5569138667684412
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "315KVA Ampere/Voltage/Frequency",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "enableDataExport": true
+        },
+        "id": "1cb0441c-1252-5b62-9770-b4cf43937410",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "1c0ca777-abc3-1811-17d4-252ac531839d": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "281632f0-04ae-b70a-5914-2136eea1ebab",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "G125_Current_A",
+                  "label": "G125_Current_A",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8406661912174429
+                },
+                {
+                  "name": "G125_Current_B",
+                  "label": "G125_Current_B",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.757295218896926
+                },
+                {
+                  "name": "G125_Current_C",
+                  "label": "G125_Current_C",
+                  "type": "timeseries",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.67473408315103
+                },
+                {
+                  "name": "G125_Voltage_AB",
+                  "type": "timeseries",
+                  "label": "G125_Voltage_AB",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.5302188577271902
+                },
+                {
+                  "name": "G125_Voltage_BC",
+                  "type": "timeseries",
+                  "label": "G125_Voltage_BC",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.1490611735997096
+                },
+                {
+                  "name": "G125_Voltage_CA",
+                  "type": "timeseries",
+                  "label": "G125_Voltage_CA",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.5913353222224726
+                },
+                {
+                  "name": "G125_Frequency",
+                  "type": "timeseries",
+                  "label": "G125_Frequency",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.2621679242368524
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "125KVA Ampere/Voltage/Frequency",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "enableDataExport": true
+        },
+        "id": "1c0ca777-abc3-1811-17d4-252ac531839d",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "f4568d05-ef96-6f1d-964b-76f9b6d7b756": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "281632f0-04ae-b70a-5914-2136eea1ebab",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-1-1Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-1Temperature",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.08750050820379474
+                },
+                {
+                  "name": "Zone-A-1-2Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-2Temperature",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.5247956792754422
+                },
+                {
+                  "name": "Zone-A-1-3Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-3Temperature",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.09392780447617843
+                },
+                {
+                  "name": "Zone-A-1-4Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-4Temperature",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.008387876891670754
+                },
+                {
+                  "name": "Zone-A-1-5Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-5Temperature",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.3292347557847224
+                },
+                {
+                  "name": "Zone-A-1-6Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-6Temperature",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.13217025609774002
+                },
+                {
+                  "name": "Zone-A-1-7Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-7Temperature",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.9214754842555062
+                },
+                {
+                  "name": "Zone-A-1-8Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-8Temperature",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.48057838586001056
+                },
+                {
+                  "name": "Zone-A-1-9Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-9Temperature",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.3269780591770348
+                },
+                {
+                  "name": "Zone-A-1-10Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-10Temperature",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.0525711950733756
+                },
+                {
+                  "name": "Zone-A-1-11Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-11Temperature",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.5742829804176011
+                },
+                {
+                  "name": "Zone-A-1-12Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-12Temperature",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.7577877489663112
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 18,
+              "max": 28,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 1 Temperature",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "f4568d05-ef96-6f1d-964b-76f9b6d7b756",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "00247983-ea79-6377-e67e-d2845b32de99": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "281632f0-04ae-b70a-5914-2136eea1ebab",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-1-1Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-1Humidity",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9776913639059546
+                },
+                {
+                  "name": "Zone-A-1-2Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-2Humidity",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.4496542432447419
+                },
+                {
+                  "name": "Zone-A-1-3Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-3Humidity",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.29628690219696896
+                },
+                {
+                  "name": "Zone-A-1-4Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-4Humidity",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.36894242778158826
+                },
+                {
+                  "name": "Zone-A-1-5Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-5Humidity",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.7509393494546186
+                },
+                {
+                  "name": "Zone-A-1-6Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-6Humidity",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.8583944169540627
+                },
+                {
+                  "name": "Zone-A-1-7Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-7Humidity",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.3655348150378923
+                },
+                {
+                  "name": "Zone-A-1-8Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-8Humidity",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.5511288695170653
+                },
+                {
+                  "name": "Zone-A-1-9Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-9Humidity",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.979015250758825
+                },
+                {
+                  "name": "Zone-A-1-10Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-10Humidity",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.4088875200151818
+                },
+                {
+                  "name": "Zone-A-1-11Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-11Humidity",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.8500339144811724
+                },
+                {
+                  "name": "Zone-A-1-12Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-1-12Humidity",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.23778552464650526
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 1 Humidity",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "00247983-ea79-6377-e67e-d2845b32de99",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "6a52b6e9-712b-e018-cd0a-a051824513db": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "281632f0-04ae-b70a-5914-2136eea1ebab",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-2-1Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-1Temperature",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.3601835377265352
+                },
+                {
+                  "name": "Zone-A-2-2Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-2Temperature",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.056735848997424565
+                },
+                {
+                  "name": "Zone-A-2-3Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-3Temperature",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.4884872658866013
+                },
+                {
+                  "name": "Zone-A-2-4Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-4Temperature",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6729725449338961
+                },
+                {
+                  "name": "Zone-A-2-5Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-5Temperature",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.48848172103889587
+                },
+                {
+                  "name": "Zone-A-2-6Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-6Temperature",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.6539627863689694
+                },
+                {
+                  "name": "Zone-A-2-7Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-7Temperature",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.7172607695560091
+                },
+                {
+                  "name": "Zone-A-2-8Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-8Temperature",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.1354931827442698
+                },
+                {
+                  "name": "Zone-A-2-9Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-9Temperature",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.7256252974968223
+                },
+                {
+                  "name": "Zone-A-2-10Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-10Temperature",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.5250778333410693
+                },
+                {
+                  "name": "Zone-A-2-11Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-11Temperature",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.8642845018343075
+                },
+                {
+                  "name": "Zone-A-2-12Temperature",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-12Temperature",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.8723822256986531
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 18,
+              "max": 28,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 2 Temperature",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "6a52b6e9-712b-e018-cd0a-a051824513db",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "72a22d87-a695-37ce-bdd6-fe466022beb8": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "281632f0-04ae-b70a-5914-2136eea1ebab",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Zone-A-2-1Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-1Humidity",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.929342719777855
+                },
+                {
+                  "name": "Zone-A-2-2Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-2Humidity",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.9427789356805074
+                },
+                {
+                  "name": "Zone-A-2-3Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-3Humidity",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.9070398243576627
+                },
+                {
+                  "name": "Zone-A-2-4Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-4Humidity",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.12573548772396825
+                },
+                {
+                  "name": "Zone-A-2-5Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-5Humidity",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.6573534460253871
+                },
+                {
+                  "name": "Zone-A-2-6Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-6Humidity",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.5805900231237864
+                },
+                {
+                  "name": "Zone-A-2-7Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-7Humidity",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.13830508271022213
+                },
+                {
+                  "name": "Zone-A-2-8Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-8Humidity",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.023261749277214472
+                },
+                {
+                  "name": "Zone-A-2-9Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-9Humidity",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.9338452562294997
+                },
+                {
+                  "name": "Zone-A-2-10Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-10Humidity",
+                  "color": "#ffeb3b",
+                  "settings": {},
+                  "_hash": 0.9257538889627233
+                },
+                {
+                  "name": "Zone-A-2-11Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-11Humidity",
+                  "color": "#03a9f4",
+                  "settings": {},
+                  "_hash": 0.20986434631614714
+                },
+                {
+                  "name": "Zone-A-2-12Humidity",
+                  "type": "timeseries",
+                  "label": "Zone-A-2-12Humidity",
+                  "color": "#ff9800",
+                  "settings": {},
+                  "_hash": 0.36386841739573694
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "legend": {
+              "show": true,
+              "position": "nw",
+              "backgroundColor": "#f0f0f0",
+              "backgroundOpacity": 0.85,
+              "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+            },
+            "decimals": 1,
+            "stack": false,
+            "tooltipIndividual": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Zone A 2 Humidity",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "72a22d87-a695-37ce-bdd6-fe466022beb8",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "7f3750b4-274b-f9ff-6250-9b7c1d640ff4": {
+        "type": "timeseries",
+        "sizeX": 16,
+        "sizeY": 10,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "eee43a7f-ced9-56ba-758e-835b8be19b3b",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "water_level",
+                  "label": "water_level",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8123123756185668
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": 0,
+              "max": 3.5,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Ground Tank Water Level (m)",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "useDashboardTimewindow": true,
+          "enableDataExport": true
+        },
+        "id": "7f3750b4-274b-f9ff-6250-9b7c1d640ff4",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "757f13c4-2696-5dda-74c7-e812496b51be": {
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "312047b0-8964-1da5-17fc-03fd70271b42",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "Solar Frequency",
+                  "type": "timeseries",
+                  "label": "Frequency (Hz)",
+                  "color": "#9c27b0",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "fillLinesOpacity": 0.4,
+                    "showPoints": false,
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.6310527743264267,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar Average current",
+                  "type": "timeseries",
+                  "label": "Average Current (A)",
+                  "color": "#f44336",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "fillLinesOpacity": 0.4,
+                    "showPoints": false,
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.4224718347083398,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar Total power factor",
+                  "type": "timeseries",
+                  "label": "Total Power Factor",
+                  "color": "#3f51b5",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "fillLinesOpacity": 0.4,
+                    "showPoints": false,
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.9058713737993747,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar active power",
+                  "type": "timeseries",
+                  "label": "Total Active Power (KW)",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.5849614911174315,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar Total reactive power",
+                  "type": "timeseries",
+                  "label": "Total Reactive Power (KVAR)",
+                  "color": "#e91e63",
+                  "settings": {},
+                  "_hash": 0.5668953645996093,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar Total apparent power",
+                  "type": "timeseries",
+                  "label": "Total Apparent Power (KVA)",
+                  "color": "#3f51b5",
+                  "settings": {},
+                  "_hash": 0.9745326126220604,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar AB line voltage",
+                  "type": "timeseries",
+                  "label": "AB line voltage (V)",
+                  "color": "#2196f3",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "fillLinesOpacity": 0.4,
+                    "showPoints": false,
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.17032303778225866,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar BC line voltage",
+                  "type": "timeseries",
+                  "label": "BC Line Voltage (V)",
+                  "color": "#ffc107",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "fillLinesOpacity": 0.4,
+                    "showPoints": false,
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.0340093075800203,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "Solar CA line voltage",
+                  "type": "timeseries",
+                  "label": "CA Line Voltage (V)",
+                  "color": "#607d8b",
+                  "settings": {
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "excludeFromStacking": false,
+                    "showLines": true,
+                    "lineWidth": 1,
+                    "fillLines": false,
+                    "fillLinesOpacity": 0.4,
+                    "showPoints": false,
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    },
+                    "thresholds": []
+                  },
+                  "_hash": 0.940858790796292,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": 500,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": [],
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": true
+            }
+          },
+          "title": "Solar Status",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "enableDataExport": true,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "displayTimewindow": true,
+          "configMode": "advanced"
+        },
+        "row": 0,
+        "col": 0,
+        "id": "757f13c4-2696-5dda-74c7-e812496b51be",
+        "typeFullFqn": "system.charts.basic_timeseries"
+      },
+      "a66b9e02-c45e-ef74-3427-cfd7a172308b": {
+        "typeFullFqn": "system.charts.basic_timeseries",
+        "type": "timeseries",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "67d5afb0-5905-11ee-b22d-170e82239536",
+              "dataKeys": [
+                {
+                  "name": "Grid Frequency",
+                  "type": "timeseries",
+                  "label": "Grid Power",
+                  "color": "#F44336",
+                  "settings": {},
+                  "_hash": 0.09747308236140562,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            },
+            {
+              "type": "device",
+              "deviceId": "05b0fbd0-1a1e-11ee-a0ed-4fb87ffd85da",
+              "dataKeys": [
+                {
+                  "name": "G125_Frequency",
+                  "type": "timeseries",
+                  "label": "G125 Power",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.8697846288693354,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "G315_Frequency",
+                  "type": "timeseries",
+                  "label": "G315 Power",
+                  "color": "#673AB7",
+                  "settings": {},
+                  "_hash": 0.02507475466281761,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": []
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "enableSelection": true,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": null,
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 0,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": false,
+            "comparisonEnabled": false,
+            "showLegend": true,
+            "legendConfig": {
+              "direction": "column",
+              "position": "bottom",
+              "sortDataKeys": false,
+              "showMin": false,
+              "showMax": false,
+              "showAvg": false,
+              "showTotal": false,
+              "showLatest": false
+            },
+            "customLegendEnabled": false
+          },
+          "title": "Grid and Generators ON/OFF",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "configMode": "advanced",
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": "thermostat",
+          "iconColor": "#1F6BDD",
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "titleFont": null,
+          "titleColor": null,
+          "enableDataExport": true,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "a66b9e02-c45e-ef74-3427-cfd7a172308b"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Operation and Maintenance Dashboard",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "19b2271e-dfdf-bf7c-0254-4d08407f65e7": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "row": 0,
+                "col": 0
+              },
+              "1cb0441c-1252-5b62-9770-b4cf43937410": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 6
+              },
+              "1c0ca777-abc3-1811-17d4-252ac531839d": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 12
+              },
+              "f4568d05-ef96-6f1d-964b-76f9b6d7b756": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "row": 4,
+                "col": 12
+              },
+              "00247983-ea79-6377-e67e-d2845b32de99": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "row": 8,
+                "col": 12
+              },
+              "6a52b6e9-712b-e018-cd0a-a051824513db": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "row": 4,
+                "col": 18
+              },
+              "72a22d87-a695-37ce-bdd6-fe466022beb8": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "row": 8,
+                "col": 18
+              },
+              "7f3750b4-274b-f9ff-6250-9b7c1d640ff4": {
+                "sizeX": 12,
+                "sizeY": 4,
+                "mobileHeight": null,
+                "row": 8,
+                "col": 0
+              },
+              "757f13c4-2696-5dda-74c7-e812496b51be": {
+                "sizeX": 6,
+                "sizeY": 4,
+                "row": 0,
+                "col": 18
+              },
+              "a66b9e02-c45e-ef74-3427-cfd7a172308b": {
+                "sizeX": 12,
+                "sizeY": 4,
+                "row": 4,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "312047b0-8964-1da5-17fc-03fd70271b42": {
+        "id": "312047b0-8964-1da5-17fc-03fd70271b42",
+        "alias": "WebdynSunPM",
+        "filter": {
+          "type": "deviceType",
+          "resolveMultiple": true,
+          "deviceTypes": [
+            "WebdynSunPM"
+          ],
+          "deviceNameFilter": ""
+        }
+      },
+      "281632f0-04ae-b70a-5914-2136eea1ebab": {
+        "id": "281632f0-04ae-b70a-5914-2136eea1ebab",
+        "alias": "SLDS",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "05b0fbd0-1a1e-11ee-a0ed-4fb87ffd85da"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "eee43a7f-ced9-56ba-758e-835b8be19b3b": {
+        "id": "eee43a7f-ced9-56ba-758e-835b8be19b3b",
+        "alias": "SLDS (Milesight)",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "e60850a0-4950-11ee-af41-63da9de16ed3"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "filters": {},
+    "timewindow": {
+      "hideInterval": false,
+      "hideLastInterval": false,
+      "hideQuickInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "timewindowMs": 604800000,
+        "quickInterval": "CURRENT_DAY",
+        "interval": 300000
+      },
+      "aggregation": {
+        "type": "NONE",
+        "limit": 25000
+      },
+      "timezone": null
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "externalId": null,
+  "name": "SLDS Operation and Maintenance Dashboard"
+}
